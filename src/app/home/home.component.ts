@@ -1,6 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
+import helper from '../helper';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +22,7 @@ import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   dynamicText: string = "";
-  phrases: string[] =[
+  phrases: string[] = [
     "Team Player.",
     "Software Developer.",
     "Backend Engineer.",
@@ -35,13 +37,19 @@ export class HomeComponent implements OnInit {
   deletingSpeed: number = 100;
   delayBetweenPhrases: number = 2000;
 
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title, private http: HttpClient) {
     this.titleService.setTitle('DC | Home')
   }
 
-
+  data: any;
   ngOnInit(): void {
     this.type();
+    // Fetch the JSON data using HttpClient
+    this.http.get(helper).subscribe((data: any) => {
+      // Parse the JSON data and assign it to the users property
+      this.phrases=data.phrases;
+      this.data=data;
+    });
   }
 
   type() {

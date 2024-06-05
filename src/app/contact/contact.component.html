@@ -3,29 +3,29 @@
         <div class="contact-card">
             <img src="../../assets/DC_Profile.jpg" alt="Contact Image" class="contact-image">
             <h2 class="contact-title"><span class="white-highlight">&lt;</span>
-                Deepak Choudhary
+                {{user.name}}
                 <span class="white-highlight">
                     /&gt;
                 </span>
             </h2>
-            <h1 class="default-highlight">FULL STACK JAVA DEVELOPER</h1>
+            <h1 class="default-highlight">{{user.profile}}</h1>
 
             <div class="media-content">
                 <div class="media-icons">
                     <div class="media-icon">
-                        <a href="https://www.linkedin.com/in/deepakchoudhary45/" target="_blank">
+                        <a [href]="user.linkedin" target="_blank">
                             <i class="fab fa-linkedin"></i>
                           </a>
                     </div>
                     <div class="media-icon">
 
-                        <a href="https://github.com/DeepakSirvi" target="_blank">
+                        <a [href]="user.github" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
 
                     <div class="media-icon">
-                        <a href="mailto:deepaksirvi45@gmail.com">
+                        <a [href]="user.emailTo">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -35,13 +35,12 @@
             </div>
 
             <p class="contact-paragraph">
-                I'm always happy to collaborate on new projects and explore innovative solutions.
-                If you're looking for a dedicated software developer to bring your ideas to life,
-                let's arrange a call. Let's discuss how <span class="default-highlight">
-                we can work together to achieve your goals</span>.
+                {{user.short_desc}}
+                 <span class="default-highlight">
+                {{user.short_desc_hilight}}</span>.
             </p>
             <button>
-                <a href="https://www.linkedin.com/in/deepakchoudhary45/" target="_blank">
+                <a [href]="user.linkedin" target="_blank">
                 > DM me on LinkedIn
                 </a>
             </button>

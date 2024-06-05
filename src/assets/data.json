@@ -1,18 +1,95 @@
 
 {
-    "users": [
+    "name":"Deepak Choudhary",
+    "linkdinLink":"https://www.linkedin.com/in/deepakchoudhary45/",
+    "github":"https://github.com/DeepakSirvi",
+    "emailTo":"mailto: deepaksirvi45@gmail.com",
+    "profile":"FULL STACK JAVA DEVELOPER",
+    "short_desc":" I'm always happy to collaborate on new projects and explore innovative solutions. If you're looking for a dedicated software developer to bring your ideas to life, let's arrange a call. Let's discuss how",
+    "short_desc_hilight":"we can work together to achieve your goals",
+    "experience":"1.5 year",
+    "blockquote":"I am a developer with 1.5 years experience in building software. I leverage my fluency in English and coding skills to craft accessible, scalable and high-performance applications.",
+    "home_title":"Engineering the digital world from end to end.",
+    "education":[
       {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john@example.com"
+        "year": "2018-2022",
+        "board": "RGPV",
+        "name" : "Madhav institute of technology & Science",
+        "address": "Gwalior, India",
+        "field":"Bachelor's Degree",
+        "degree":"Chemical Engineering"
       },
       {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane@example.com"
+        "year": "2017",
+        "board": "MP Board",
+        "name" : "Government S G Boys Higher Secondary School NO 1",
+        "address": "Indore, India",
+        "field":"Higher Secondary Education (12th Grade)",
+        "degree":"Science Stream"
+      },
+      {
+        "year": "2015",
+        "board": "MP Board",
+        "name" : "Manas Convent Higher Secondory School",
+        "address": "Rajgarh-Dhar, India",
+        "field":"Secondary Education",
+        "degree":"10th Grade"
       }
     ],
-    "name":"Deepak Choudhary",
-    "linkdinLink":"https://www.linkedin.com/in/deepakchoudhary45/"
+    "language":[
+      {
+        "name":"English",
+        "type":"Fluent"
+      },
+      {
+        "name":"Hindi",
+        "type":"Native"
+      }
+    ],
+    "technology":[
+      "devicon-java-plain-wordmark",
+      "devicon-spring-original-wordmark",
+      "devicon-hibernate-plain-wordmark",
+      "devicon-sqlite-plain-wordmark",
+      "devicon-sqlalchemy-plain",
+      "devicon-angular-plain",
+      "devicon-typescript-plain"
+      ,"devicon-html5-plain"
+      ,"devicon-css3-plain"
+      ,"devicon-bootstrap-plain"
+      ,"devicon-vscode-plain"
+      ,"devicon-postman-plain"
+      ,"devicon-swagger-plain"
+      ,"devicon-docker-plain-wordmark",
+      "devicon-git-plain-wordmark"
+      ,"devicon-github-original"
+      ],
+      "phrases":[
+        "Team Player.",
+        "Software Developer.",
+        "Backend Engineer.",
+        "Software Engineer.",
+        "Problem Solver"
+      ],
+        "projects": [
+          {
+            "id": 1,
+            "name": "CICO web UI",
+            "summary": "Developed CICO, a comprehensive coaching institute management system leveraging Angular. Enhanced user experience by facilitating attendance tracking, course management, quizzes, assignments, and notes.",
+            "description": "CICO(Check-In Check-Out), designed for a coaching institute, streamlines institute management tasks. Utilizing Angular, the frontend ensures a seamless user interface. It enables attendance tracking, course details management, and access to quizzes, assignments, and notes for students and instructors, integrated Google APIs, and utilized Apex charts.",
+            "projectLink": "",
+            "tags": ["ANGULAR", "TYPESCRIPT", "HTML5", "CSS3", "BOOTSTRAP"],
+            "pictures": ["../../assets/portfolio_01.png", "../../assets/portfolio_02.png", "../../assets/portfolio_03.png", "../../assets/portfolio_04.png", "../../assets/portfolio_05.png"]
+          },
+          {
+            "id": 2,
+            "name": "CICO Restful API",
+            "summary": "Implemented CICO backend using Spring Boot and MySQL, ensuring reliability and efficiency. Provided APIs for app Smart Tracko. Additional features include announcements, notifications, and functionalities for class, batch, subject, quiz test results, assignment management, attendance tracking, and fee management.",
+            "description": "The backend of Smart Tracko and CICO was developed with Spring Boot and MySQL to establish a robust and efficient system. APIs were provided for app developers to integrate with external applications. Google APIs and Apex charts were integrated to enhance functionality and visualization. Various features such as announcements, notifications, and management functionalities for classes, batches, subjects, quizzes, test results, assignments, attendance, and fees were implemented to comprehensively meet the needs of coaching institutes.",
+            "projectLink": "",
+            "tags": ["JAVA", "SPRINGBOOT", "SQL", "SPRINGJWT", "LOMBOK", "POSTMAN", "GIT", "JPA"],
+            "pictures": ["../../assets/dou_01.png", "../../assets/dou_02.png", "../../assets/dou_03.png"]
+          }
+        ]
   }
   

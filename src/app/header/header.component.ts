@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
+import helper from '../helper';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +21,7 @@ export class HeaderComponent {
   data:any;
   ngOnInit() {
     // Fetch the JSON data using HttpClient
-    this.http.get('../assets/data.json').subscribe((data: any) => {
+    this.http.get(helper).subscribe((data: any) => {
       // Parse the JSON data and assign it to the users property
       this.data=data;
       

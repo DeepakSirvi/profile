@@ -18,12 +18,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'deepak-portfolio';
-  constructor(private http: HttpClient) { }
-  ngOnInit() {
-    // Fetch the JSON data using HttpClient
-    this.http.get('../assets/data.json').subscribe((data: any) => {
-      // Parse the JSON data and assign it to the users property
-      console.log(data.users)
-    });
-  }
+  // constructor(private http: HttpClient) { }
+  // ngOnInit() {
+  //   // Fetch the JSON data using HttpClient
+  //   this.http.get('../assets/data.json').subscribe((data: any) => {
+  //     // Parse the JSON data and assign it to the users property
+  //     console.log(data.users)
+  //   });
+  // }
 }
